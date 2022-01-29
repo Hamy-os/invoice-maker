@@ -1,0 +1,21 @@
+{
+  "name": "invoice-tahira",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "downloadjs": "^1.4.7",
+    "next": "12.0.9",
+    "pdf-lib": "^1.17.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.7.0",
+    "eslint-config-next": "12.0.9"
+  }
+}
