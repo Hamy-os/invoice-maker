@@ -63,7 +63,7 @@ export default function Home() {
         Invoice Number:
       </label>
       <p>
-        <input type="text" value={IN} onChange={(e) => setIN(e.target.value)} className="py-1 px-1 text-gray-900 outline-none block h-full w-full" placeholder="00001" required=""/>
+        <input type="number" value={IN} onChange={(e) => setIN(e.target.value)} className="py-1 px-1 text-gray-900 outline-none block h-full w-full" placeholder="00001" required=""/>
       </p>
       </div>
       <div className="bg-grey-500 border focus-within:border-blue-500 focus-within:text-blue-500 transition-all duration-500 relative rounded p-1">
@@ -79,7 +79,7 @@ export default function Home() {
           Your Adress:
         </label>
         <p>
-        <input type="text" value={AF} onChange={(e) => setAF(e.target.value)} className="py-1 px-1 text-gray-900 outline-none block h-full w-full" placeholder="City Center Doha Qatar" required=""/>
+        <input type="text" value={AF} onChange={(e) => setAF(e.target.value)} className="capitalize py-1 px-1 text-gray-900 outline-none block h-full w-full" placeholder="City Center Doha Qatar" required=""/>
         </p>
       </div>
       <div className="border focus-within:border-blue-500 focus-within:text-blue-500 transition-all duration-500 relative rounded p-1">
@@ -87,7 +87,7 @@ export default function Home() {
           Your Phone Number:
         </label>
         <p>
-        <input type="text" value={PF} onChange={(e) => setPF(e.target.value)} className="py-1 px-1 text-gray-900 outline-none block h-full w-full" placeholder="5050 5099" required=""/>
+        <input type="number" value={PF} onChange={(e) => setPF(e.target.value)} className="py-1 px-1 text-gray-900 outline-none block h-full w-full" placeholder="5050 5099" required=""/>
         </p>
       </div>
       <div className="border focus-within:border-blue-500 focus-within:text-blue-500 transition-all duration-500 relative rounded p-1">
@@ -95,7 +95,7 @@ export default function Home() {
           Price:
         </label>
         <p>
-        <input type="text" value={P} onChange={(e) => setP(e.target.value)}  className="py-1 px-1 text-gray-900 outline-none block h-full w-full" placeholder="600" required=""/>
+        <input type="number" value={P} onChange={(e) => setP(e.target.value)}  className="py-1 px-1 text-gray-900 outline-none block h-full w-full" placeholder="600" required=""/>
         </p>
         </div>
       <div className="border focus-within:border-blue-500 focus-within:text-blue-500 transition-all duration-500 relative rounded p-1">
@@ -103,7 +103,7 @@ export default function Home() {
           Description:
         </label>
         <p>
-        <input type="text" value={D} onChange={(e) => setD(e.target.value)}  className="py-1 px-1 text-gray-900 outline-none block h-full w-full" placeholder="Tour guide service provided for discover qatar (MSC) 1st January 2022" required=""/>
+        <input type="text" value={D} onChange={(e) => setD(e.target.value)}  className="capitalize py-1 px-1 text-gray-900 outline-none block h-full w-full" placeholder="Tour guide service provided for discover qatar (MSC) 1st January 2022" required=""/>
         </p>
         </div>
       <div className="border focus-within:border-blue-500 focus-within:text-blue-500 transition-all duration-500 relative rounded p-1">
@@ -111,20 +111,20 @@ export default function Home() {
           Quantity:
         </label>
         <p>
-          <input type="text" value={Q} onChange={(e) => setQ(e.target.value)} className="py-1 px-1 text-gray-900 outline-none block h-full w-full" placeholder="1" required=""/>
+          <input type="number" value={Q} onChange={(e) => setQ(e.target.value)} className="py-1 px-1 text-gray-900 outline-none block h-full w-full" placeholder="1" required=""/>
         </p>
       </div>
-      <div className="border focus-within:border-blue-500 focus-within:text-blue-500 transition-all duration-500 relative rounded p-1">
-      <label className="bg-white text-gray-600 px-1">
+      <div className="border   focus-within:border-blue-500 focus-within:text-blue-500 transition-all duration-500 relative rounded p-1">
+      <label className="bg-white  text-gray-600 px-1">
         Contract Number:
       </label>
       <p>
-        <input type="text" value={CN} onChange={(e) => setCN(e.target.value)} className="py-1 px-1 text-gray-900 outline-none block h-full w-full" placeholder="QTR-CNT-2022-0001" required=""/>
+        <input type="text" value={CN} onChange={(e) => setCN(e.target.value)} className="uppercase  py-1 px-1 text-gray-900 outline-none block h-full w-full" placeholder="QTR-CNT-2022-0001" required=""/>
       </p>
       </div>
 
     </div>
-    <div className="border-t mt-6 pt-3">
+    <div className="border-t mt-6 pt-3 text-center">
       <button  type="submit" className="rounded text-gray-100 px-3 py-1 bg-blue-500 hover:shadow-inner hover:bg-blue-700 transition-all duration-300">
         Save
       </button>
